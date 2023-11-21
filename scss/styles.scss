@@ -1,0 +1,28 @@
+//Import de bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//Import de la font nunito sans
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
+
+// @import url("https://unpkg.com/feather-icons");
+
+//Import des mixins et variables customs
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/functions";
+@import "utils/classes";
+
+//modules import
+@import "modules/header";
+@import "modules/blueSection";
+
+
+
+
+
+*{
+        
+        font-family: 'Nunito Sans', sans-serif;
+
+    }
+

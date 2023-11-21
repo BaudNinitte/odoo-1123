@@ -1,0 +1,21 @@
+.blueSection{
+    &:after{
+        content: url("/assets/frame.svg");
+        position: absolute;
+        bottom: -78px;
+        height:80px;
+        width:100%;
+    }
+   .rightPart{
+        
+        border-bottom-right-radius: 80px;
+        .bankCard{
+            background: url("/assets/card.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .viewAll{
+            border-bottom: 1px solid map-get($colors, "blue" )
+        }
+   }
+}

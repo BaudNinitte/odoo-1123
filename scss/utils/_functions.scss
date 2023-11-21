@@ -1,0 +1,18 @@
+@function color($color){
+    @return map-get($colors, $color)
+};
+
+@function size($size){
+    @return map-get($font-sizes, $size)
+};
+
+@function space($space){
+    @return map-get($spaces, $space)
+};
+
+@function radius($radius){
+    @return map-get($bradius, $radius)
+};
+@function padding($padding){
+    @return map-get($paddingButtons, $padding)
+};

@@ -1,0 +1,76 @@
+$body-font: 'Nunito Sans', sans-serif;
+
+$colors: (
+    "blue": #038AFF,
+    "whiteBlue": #FAFBFF,
+    "lightBlue": #E2E9F1,
+    "lightGreyBlue": #9EABBC,
+    "greyBlue": #718097,
+    "navyBlue": #162A5C,
+    "purpleBlue": #161348,
+    "darkBlue": #273447,
+    "green": #5CCAA7,
+    "yellow": #FEBD3D
+);
+
+// $opacity: (
+//     "1": 10%,
+//     "2": 20%,
+//     "3": 30%,
+//     "4": 40%,
+//     "5": 50%,
+//     "6": 60%,
+//     "7": 70%,
+//     "8": 80%,
+//     "9": 90%,
+// );
+
+
+$default-font-size: 1rem;
+$font-sizes:(
+    "xxs": $default-font-size * .5,
+    "xs": $default-font-size * .7,
+    "sm": $default-font-size * .875,
+    "md": $default-font-size,
+    "lg": $default-font-size * 1.5,
+    "xl": $default-font-size * 2,
+    "xxl": $default-font-size * 3,
+);
+
+$default-space: 1rem;
+$spaces:(
+    "0": 0,
+    "1": $default-space * 0.2,
+    "2": $default-space * 0.4,
+    "3": $default-space * 0.6,
+    "4": $default-space * 0.8,
+    "5": $default-space,
+    "6": $default-space * 1.25,
+    "7": $default-space * 1.5,
+    "8": $default-space * 1.75,
+    "9": $default-space * 2,
+    "10": $default-space * 2.5,
+    "11": $default-space * 3,
+    "12": $default-space * 4,
+    "13": $default-space * 5,
+    "14": $default-space * 7,
+    "15": $default-space * 10
+);
+
+$default-radius: 10px;
+$bradius:(
+    "0": 0,
+    "5": 5px,
+    "7": 7px,
+    "10": 10px,
+    "15": 15px,
+    "30": 30px,
+    "80": 80px,
+);
+
+$paddingButtons:(
+    "xs":  5px 17px 5px 17px,
+    "sm":  7px 20px 7px 20px,
+    "md": 14px 26px 14px 26px,
+    "lg": 15px 30px 15px 30px
+);
