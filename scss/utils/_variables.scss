@@ -1,5 +1,7 @@
+//FONT VARIABLE
 $body-font: 'Nunito Sans', sans-serif;
 
+//COLORS MAP
 $colors: (
     "blue": #038AFF,
     "whiteBlue": #FAFBFF,
@@ -10,34 +12,41 @@ $colors: (
     "purpleBlue": #161348,
     "darkBlue": #273447,
     "green": #5CCAA7,
-    "yellow": #FEBD3D
+    "yellow": #FEBD3D,
+    "lightPurpleBlue": #CBDCE1
 );
 
-// $opacity: (
-//     "1": 10%,
-//     "2": 20%,
-//     "3": 30%,
-//     "4": 40%,
-//     "5": 50%,
-//     "6": 60%,
-//     "7": 70%,
-//     "8": 80%,
-//     "9": 90%,
-// );
+//OPACITIES MAP
+$opacities: (
+    "1": 10%,
+    "2": 20%,
+    "3": 30%,
+    "4": 40%,
+    "5": 50%,
+    "6": 60%,
+    "7": 70%,
+    "8": 80%,
+    "9": 90%,
+    "full": 100%,
+);
 
-
+//FONT SIZE DEFAULT VARIABLE
 $default-font-size: 1rem;
+//FONT SIZES MAP
 $font-sizes:(
     "xxs": $default-font-size * .5,
-    "xs": $default-font-size * .7,
+    "xs": $default-font-size * .75,
     "sm": $default-font-size * .875,
     "md": $default-font-size,
-    "lg": $default-font-size * 1.5,
-    "xl": $default-font-size * 2,
-    "xxl": $default-font-size * 3,
+    "lg": $default-font-size * 1.25,
+    "xl": $default-font-size * 1.5,
+    "xxl": $default-font-size * 2,
+    "xxxl": $default-font-size * 3,
 );
 
+//SPACE DEFAULT VARIABLE
 $default-space: 1rem;
+//SPACES MAP
 $spaces:(
     "0": 0,
     "1": $default-space * 0.2,
@@ -54,10 +63,14 @@ $spaces:(
     "12": $default-space * 4,
     "13": $default-space * 5,
     "14": $default-space * 7,
-    "15": $default-space * 10
+    "15": $default-space * 10,
+    "16": $default-space * 11,
+    "20": $default-space * 15
 );
 
+//RADIUS DEFAULT VARIABLE
 $default-radius: 10px;
+//RADIUS MAP
 $bradius:(
     "0": 0,
     "5": 5px,
@@ -68,9 +81,25 @@ $bradius:(
     "80": 80px,
 );
 
+//BUTTONS PADDING MAP
 $paddingButtons:(
     "xs":  5px 17px 5px 17px,
     "sm":  7px 20px 7px 20px,
     "md": 14px 26px 14px 26px,
     "lg": 15px 30px 15px 30px
 );
+
+//BOX SHADOW MAP
+$boxShadow: (
+    "none": none,
+    "sm": 0 0 20px 0px rgba(0, 0, 0, .05),
+    "lg": 0 0 20px 0px rgba(0, 0, 0, .15),
+    "bottom": 0 2px 20px 0px rgba(0, 0, 0, .15),
+);
+
+//BOLDS MAP
+$bolds:(
+    "regular": 400,
+    "semi": 600,
+    "bold": 700
+)

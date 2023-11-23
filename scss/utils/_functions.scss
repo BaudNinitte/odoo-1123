@@ -2,6 +2,10 @@
     @return map-get($colors, $color)
 };
 
+@function opacity($opacity){
+    @return map-get($opacities, $opacity)
+};
+
 @function size($size){
     @return map-get($font-sizes, $size)
 };
@@ -15,4 +19,12 @@
 };
 @function padding($padding){
     @return map-get($paddingButtons, $padding)
+};
+
+@function shadow($shadow){
+    @return map-get($boxShadow, $shadow)
+};
+
+@function bold($bold){
+    @return map-get($bolds, $bold)
 };

@@ -1,3 +1,4 @@
+//SET CLASS FOR COLORS
 @each $color, $value in $colors {
     @include bg-variant('.bg-#{$color}', $value);
     .btn-outline-#{$color} {
@@ -8,74 +9,97 @@
     }
   }
 
-  @each $size, $value in $font-sizes {
-    .text-size-#{$size} {
-      font-size: $value;
-    }
+  //SET CLASS FOR OPACITIES
+@each $opacity, $value in $opacities {
+  .opacity-#{$opacity} {
+    opacity: $value;
   }
+}
 
-  @each $space, $value in $spaces {
-    .padding-#{$space} {
-      padding: $value;
-    }
-    .padding-y-#{$space} {
-      padding-top: $value;
-      padding-bottom: $value;
-    }
-    .padding-x-#{$space} {
-      padding-left: $value;
-      padding-right: $value;
-    }
-    .padding-b-#{$space} {
-      padding-bottom: $value;
-    }
-    .padding-t-#{$space} {
-      padding-top: $value;
-    }
-    .padding-l-#{$space} {
-      padding-left: $value;
-    }
-    .padding-r-#{$space} {
-      padding-right: $value;
-    }
-
-    .margin-#{$space} {
-      margin: $value;
-    }
-    .margin-y-#{$space} {
-      margin-top: $value;
-      margin-bottom: $value;
-    }
-    .margin-x-#{$space} {
-      margin-left: $value;
-      margin-right: $value;
-    }
-    .margin-b-#{$space} {
-      margin-bottom: $value;
-    }
-    .margin-t-#{$space} {
-      margin-top: $value;
-    }
-    .margin-l-#{$space} {
-      padding-left: $value;
-    }
-    .margin-r-#{$space} {
-      padding-right: $value;
-    }
-    
+//SET CLASS FOR FONT SIZE
+@each $size, $value in $font-sizes {
+  .text-size-#{$size} {
+    font-size: $value;
   }
+}
 
-
-
-
-  @each $radius, $value in $bradius {
-    .radius-#{$radius} {
-      border-radius: $value;
-    }
+//SET CLASS FOR SPACES
+@each $space, $value in $spaces {
+  //PADDING
+  .padding-#{$space} {
+    padding: $value;
   }
-
-  @each $padding, $value in $paddingButtons {
-    .btn-pad-#{$padding} {
-      padding: $value;
-    }
+  .padding-y-#{$space} {
+    padding-top: $value;
+    padding-bottom: $value;
   }
+  .padding-x-#{$space} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .padding-b-#{$space} {
+    padding-bottom: $value;
+  }
+  .padding-t-#{$space} {
+    padding-top: $value;
+  }
+  .padding-l-#{$space} {
+    padding-left: $value;
+  }
+  .padding-r-#{$space} {
+    padding-right: $value;
+  }
+//MARGIN
+  .margin-#{$space} {
+    margin: $value;
+  }
+  .margin-y-#{$space} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .margin-x-#{$space} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .margin-b-#{$space} {
+    margin-bottom: $value;
+  }
+  .margin-t-#{$space} {
+    margin-top: $value;
+  }
+  .margin-l-#{$space} {
+    margin-left: $value;
+  }
+  .margin-r-#{$space} {
+    margin-right: $value;
+  }
+}
+
+
+
+//SET CLASS FOR RADIUS
+@each $radius, $value in $bradius {
+  .radius-#{$radius} {
+    border-radius: $value;
+  }
+}
+
+//SET CLASS FOR BUTTONS PADDING
+@each $padding, $value in $paddingButtons {
+  .btn-pad-#{$padding} {
+    padding: $value;
+  }
+}
+
+//SET CLASS FOR BOX SHADOW
+@each $shadow, $value in $boxShadow {
+  .box-shadow-#{$shadow} {
+    box-shadow: $value;
+  }
+}
+//SET CLASS FOR BOLDS
+@each $bold, $value in $bolds {
+  .bold-#{$bold} {
+    font-weight: $value;
+  }
+}

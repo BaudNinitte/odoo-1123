@@ -1,0 +1,169 @@
+//MAIN STYLES
+
+//transition
+.transition{
+    transition: all .3s;
+}
+
+// text & colors
+*{
+    font-family: $body-font;
+    font-size: $default-font-size;
+    color: color("greyBlue")
+
+}
+h1, h2, h3, h4, h5, h6{
+    color: color("navyBlue")
+    
+}
+
+.lead{
+    font-size: $default-font-size * 1.125;
+}
+
+//buttons, links & icons
+.btn{
+    @extend .transition;
+    &:not(.btn-footer){
+        &.bg-white{
+            svg{
+                stroke:color("darkBlue");
+            }
+        }
+    }
+    &.bg-white{
+        svg{
+            @extend .transition;
+        }
+        &:hover{
+            @extend .text-blue;
+            svg{
+                stroke:color("blue");
+            }
+        }
+    }
+    &:hover{
+        transform: translateY(-2px);
+    }
+    
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+    }
+    &.text-blue{
+        @extend .transition;
+        @extend .py-1;
+        border-bottom: 2px solid color("blue");
+        display: inline-block;
+        &.text-size-sm{
+            border-width:1px;
+        }
+        &:hover{
+            color:color("navyBlue");
+            border-color: color("navyBlue");
+            transform: translateY(-2px);
+            
+            svg{
+                stroke:color("navyBlue");
+            }
+        }
+        svg{
+            stroke:color("blue");
+        }
+    }
+    &.text-purpleBlue{
+        @extend .transition;
+        @extend .py-1;
+        border-bottom: 2px solid color("purpleBlue");
+        &.text-size-sm{
+            border-width:1px;
+        }
+        &:hover{
+            color:color("blue");
+            border-color: color("blue");
+        }
+    }
+    &.card{
+        @extend .transition;
+        &:hover{
+            scale: 1.4;
+            box-shadow: map-get($boxShadow, "lg");
+            z-index: 9;
+            
+        }
+        .card-link{
+            border-bottom: 2px solid color("purpleBlue");
+        }
+    }
+}
+
+//shadows
+.box-shadow{
+    box-shadow: map-get($boxShadow, "sm");
+}
+.btn:focus, .btn.focus{
+    box-shadow: map-get($boxShadow, "none");
+}
+
+// progress bars
+.progress{
+    height:2px;
+}
+
+//card
+.card{
+    @extend .box-shadow;
+    border:1px solid color("lightBlue");
+    @extend .radius-10;
+}
+
+//buttons on media
+.media{
+    &-right{
+        button{
+            top:20px;
+            left:20px;
+        }
+    }
+    &-left{
+        button{
+            top:20px;
+            right:20px;
+        }
+    }
+}
+
+// dashes between sections
+.dashed-section{
+    &:before{
+        content: url("/assets/dash.svg");
+        position: absolute;
+        top: 30px;
+        right:50%;
+        object-position: center;
+        z-index: -9;
+    }
+    &-inverted:before{
+        content: url("/assets/dash.svg");
+        position: absolute;
+        top: 30px;
+        left:50%;
+        object-position: center;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        z-index:-9;
+    }
+}
+
+@include media-breakpoint-down(md){
+    .dashed-section{
+        &:before{
+            right:20%;
+        }
+        &-inverted:before{
+            left:20%;
+        }
+    }
+}

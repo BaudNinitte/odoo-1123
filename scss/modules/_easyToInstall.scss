@@ -1,0 +1,18 @@
+.EasyToInstallSection{
+    .lead{
+        margin-bottom:$default-space * 3.5;
+    }
+}
+
+@include media-breakpoint-down(md){
+    .EasyToInstallSection{
+        .downloadsLinks{
+            flex-direction: column;
+            align-items: start;
+            .btn{
+                margin-right: 0;
+                margin-bottom:15px;
+            }
+        }
+    } 
+}

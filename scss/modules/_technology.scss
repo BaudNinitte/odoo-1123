@@ -1,0 +1,62 @@
+.technologySection{
+    .leftPart{
+        .leftColumn, .rightColumn{
+            padding: 0 calc(#{$default-space} * 0.46) 0 calc(#{$default-space} * 0.46);
+        }
+    }
+    .card{
+        a svg{
+            @extend .transition;
+            &:hover{
+                stroke: color("navyBlue");
+            }
+        }
+        .initials{
+            width: calc(#{$default-space} * 2.5);
+            height:calc(#{$default-space} * 2.5);
+        }
+        &.websiteUI{
+            .persons{
+                img{
+                    border:1px solid white;
+                    &:nth-child(1){
+                        left:10px;
+                    }
+                    &:nth-child(3){
+                        right:10px;
+                    }
+                }
+            }
+            .line{
+                background: linear-gradient(to right,rgba(231, 235, 244, 0), rgba(231, 235, 244, 1), rgba(231, 235, 244, 0));
+                height: 1px;
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+
+@include media-breakpoint-down(md){
+    .technologySection{
+        .leftPart{
+            &>div>div>div:nth-child(2){
+                margin-bottom:16px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm){
+    .technologySection{
+        &>.container>.row{
+            flex-direction: column-reverse;
+            .rightPart{
+                .text-blue{
+                    margin-bottom:16px;
+                }
+            }
+        }
+    }
+}

@@ -13,16 +13,13 @@
 @import "utils/classes";
 
 //modules import
+@import "modules/main";
 @import "modules/header";
 @import "modules/blueSection";
-
-
-
-
-
-*{
-        
-        font-family: 'Nunito Sans', sans-serif;
-
-    }
-
+@import "modules/tools";
+@import "modules/features";
+@import "modules/technology";
+@import "modules/easyToInstall";
+@import "modules/InfiniteSlutions";
+@import "modules/awards";
+@import "modules/footer";

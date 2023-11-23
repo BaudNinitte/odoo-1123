@@ -1,4 +1,7 @@
-# odoo-1123
+# odoo Design exercice November 2023
+## Baudouin Ninitte
+
+## How to run this exercice ?
 
 ---
 

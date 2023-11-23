@@ -1,0 +1,80 @@
+footer{
+    &:after{
+        content: url("/assets/purpleBlueFrame.svg");
+        position: absolute;
+        top: -78px;
+        height:80px;
+        width:100%;
+        scale: -1;
+    }
+    h2{
+        font-size: $default-font-size * 1.75;
+    }
+    .socialMedias a{
+        @extend .opacity-7;
+        @extend .transition;
+        
+        &:hover{
+            @extend .opacity-full;
+            transform: translateY(-2px);
+        }
+    }
+    .line{
+        background: linear-gradient(to right,rgba(231, 235, 244, 0), rgba(231, 235, 244, 1), rgba(231, 235, 244, 0));
+        height: 1px;
+        width: 100%;
+        opacity: .15;
+    }
+    .accountColumn, .aboutColumn, .companyColumn{
+        h3{
+            @extend .text-lightBlue ;
+            @extend .text-size-md ;
+            @extend .bold-regular;
+            @extend .mb-3;
+        }
+        li{
+            @extend .mb-1;
+            a{
+                @extend .transition;
+                @extend .text-size-sm;
+                @extend .text-lightGreyBlue;
+                &:hover{
+                    @extend .text-lightBlue;
+                }
+            }
+        }
+        
+    }
+    .bottomBar{
+        p{
+            @extend .text-size-sm;
+        }
+        a{
+            @extend .text-lightGreyBlue;
+            @extend .transition;
+            @extend .text-size-sm;
+            &:hover{
+                @extend .text-lightBlue;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md){
+    footer{
+        .buttons{
+            text-align: left!important;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm){
+    footer{
+        .buttons button{
+            margin-bottom: 16px;
+        }
+        .socialMedias{
+            margin-bottom: 32px;
+        }
+    }
+}

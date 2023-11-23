@@ -1,0 +1,29 @@
+.toolsPart{
+    .media-left{
+        top: -120px;;
+        right:-35px;
+    }
+}
+
+@include media-breakpoint-down(lg){
+    .toolsPart{
+        .media-left{
+            top: -100px;;
+            right:-75px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md){
+    .toolsPart{
+        padding-top: 100px;
+        .awesomeProjects{
+            margin-bottom: 16px;
+        }
+        .media-left{
+            position: relative!important;
+            top: 0;
+            right: 0;
+        }
+    }
+}

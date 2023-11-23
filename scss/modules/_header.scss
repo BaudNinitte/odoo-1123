@@ -1,6 +1,43 @@
 header{
     nav{
         border-bottom: 1px solid rgba(245, 245, 245, .3);
+        .navbar-collapse.collapse .navbar-nav{
+            @extend .transition;
+            text-align: right;
+        }
+        
+        a.nav-link{
+            @extend .transition;
+            @extend .opacity-8;
+            &:hover{
+                @extend .opacity-full;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
 
+@include media-breakpoint-up(lg){
+    header{
+        nav{
+
+            .navbar-collapse.collapse{
+                display:none!important;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md){
+    header{
+        nav{
+            .navbar-toggler{
+                border: none;
+            }
+           
+            &>.navbar-nav{
+                display:none;
+            }
+        }
     }
 }
